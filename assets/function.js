@@ -139,11 +139,23 @@ function upperFirst(phrase) {
 console.log(upperFirst("questo weekend tocchiamo l'erba fuori"));
 
 /* ESERCIZIO 9
- Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
+ Scrivi una funzione di nome "cutString", che riceve come parametro una stringa.
+  La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA */ /*slice ci seleziona la parte interessata*/
+function cutString(s) {
+  let nuovaStringa = "";
+  const res = s.slice(1, s.length - 1);
+  return res;
+}
+
+/*argomenti sono i valori che stiamo passando alla funzione; li passiamo ai parametri della funzione*/
+
+/*0123 per conoscere il risultato di uno slice il calcolo da fare è la fine - l'inizio mi darà la lunghezza del risultato*/
+/* "abcd" abcd la lunghezza della stringa contiene 4 caratteri
+  nella programmazione spesso troveremo nel caso di "slice" avremo l'inizio incluso mentre la fine sarà esclusa*/
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
