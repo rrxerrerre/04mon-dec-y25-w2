@@ -146,10 +146,11 @@ console.log(upperFirst("questo weekend tocchiamo l'erba fuori"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */ /*slice ci seleziona la parte interessata*/
 function cutString(s) {
-  let nuovaStringa = "";
+  let newString = "";
   const res = s.slice(1, s.length - 1);
   return res;
 }
+console.log(cutString());
 
 /*argomenti sono i valori che stiamo passando alla funzione; li passiamo ai parametri della funzione*/
 
